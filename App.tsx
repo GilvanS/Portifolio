@@ -67,8 +67,8 @@ function App() {
             <div className="cursor-pointer text-gray-500 hover:text-white transition-colors overflow-hidden">
                 <span className="material-symbols-outlined text-[24px] select-none">search</span>
             </div>
-            <div className="cursor-pointer text-gray-500 hover:text-white transition-colors overflow-hidden">
-                <span className="material-symbols-outlined text-[24px] select-none">source_control</span>
+            <div className="cursor-pointer text-gray-500 hover:text-white transition-colors overflow-hidden w-full flex justify-center">
+                <span className="material-symbols-outlined text-[24px] select-none overflow-hidden" aria-hidden="true">source_control</span>
             </div>
             <div className="cursor-pointer text-gray-500 hover:text-white transition-colors overflow-hidden">
                 <span className="material-symbols-outlined text-[24px] select-none">bug_report</span>
