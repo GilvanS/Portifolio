@@ -48,7 +48,7 @@ export const Experience: React.FC = () => {
             
             <div className="text-gray-400 font-mono text-sm mb-3">@ {exp.company}</div>
             
-            <p className="text-gray-500 leading-relaxed mb-4 max-w-2xl">
+            <p className="text-gray-500 leading-relaxed mb-4 max-w-2xl break-words overflow-wrap-anywhere">
               {exp.description}
             </p>
             

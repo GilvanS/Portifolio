@@ -18,8 +18,10 @@ export const CodeLayout: React.FC<LayoutProps> = ({ children }) => {
       </div>
       
       {/* Content Area */}
-      <div className="flex-1 h-full overflow-y-auto scrollbar-custom">
-        {children}
+      <div className="flex-1 h-full overflow-y-auto scrollbar-custom overflow-x-hidden">
+        <div className="min-w-0">
+          {children}
+        </div>
       </div>
     </div>
   );
