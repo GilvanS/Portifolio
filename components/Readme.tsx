@@ -17,8 +17,9 @@ export const Readme: React.FC = () => {
                             const parent = target.parentElement;
                             if (parent && !parent.querySelector('.avatar-fallback')) {
                                 const fallback = document.createElement('div');
-                                fallback.className = 'avatar-fallback bg-center bg-no-repeat bg-cover rounded-full h-32 w-32 border-4 border-[#333] shadow-xl';
-                                fallback.style.backgroundImage = 'url("https://ui-avatars.com/api/?name=Gilvan+João+Sousa&background=0D8ABC&color=fff&size=256")';
+                                fallback.className = 'avatar-fallback bg-center bg-no-repeat bg-cover rounded-full h-32 w-32 border-4 border-[#333] shadow-xl flex items-center justify-center text-white text-xl font-bold';
+                                fallback.style.background = '#0D8ABC';
+                                fallback.textContent = 'GS';
                                 parent.appendChild(fallback);
                             }
                         }}

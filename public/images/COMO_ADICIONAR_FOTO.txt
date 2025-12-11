@@ -1,0 +1,24 @@
+==============================================
+  COMO ADICIONAR SUA FOTO DE PERFIL
+==============================================
+
+PASSO 1: Localize a foto que você quer usar
+
+PASSO 2: Renomeie o arquivo para: profile.jpg
+  (ou profile.png se for PNG)
+
+PASSO 3: Copie a foto para esta pasta:
+  A:\Workspace\Portifolio\public\images\profile.jpg
+
+PASSO 4: Execute no terminal:
+  git add public/images/profile.jpg
+  git commit -m "feat: Adicionar foto de perfil"
+  git push origin main
+
+==============================================
+DICA: 
+- A foto será exibida em formato circular
+- Formatos aceitos: JPG, PNG, WEBP
+- Tamanho recomendado: mínimo 400x400 pixels
+==============================================
+

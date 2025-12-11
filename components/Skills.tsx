@@ -2,15 +2,22 @@ import React from 'react';
 import { SkillItem } from '../types';
 
 const skills: SkillItem[] = [
+  { name: 'Java', icon: 'code', color: 'text-red-400' },
+  { name: 'JavaScript', icon: 'code', color: 'text-yellow-400' },
+  { name: 'Python', icon: 'code', color: 'text-blue-400' },
   { name: 'Cypress', icon: 'bug_report', color: 'text-green-400' },
+  { name: 'Selenium', icon: 'check_circle', color: 'text-green-500' },
+  { name: 'Playwright', icon: 'bug_report', color: 'text-blue-300' },
   { name: 'Appium', icon: 'smartphone', color: 'text-purple-400' },
-  { name: 'Selenium', icon: 'check_circle', color: 'text-yellow-400' },
+  { name: 'Postman', icon: 'send', color: 'text-orange-500' },
   { name: 'Vision Plus', icon: 'credit_card', color: 'text-blue-300' },
   { name: 'Mainframe', icon: 'terminal', color: 'text-gray-200' },
   { name: 'ISO 8583', icon: 'data_exchange', color: 'text-orange-400' },
-  { name: 'Postman', icon: 'send', color: 'text-orange-500' },
+  { name: 'EMV', icon: 'credit_card', color: 'text-orange-300' },
+  { name: 'Jira', icon: 'task', color: 'text-blue-500' },
+  { name: 'ALM Octane', icon: 'assignment', color: 'text-blue-400' },
+  { name: 'Jenkins', icon: 'settings', color: 'text-gray-400' },
   { name: 'SQL', icon: 'database', color: 'text-blue-400' },
-  { name: 'Jira / ALM', icon: 'task', color: 'text-blue-500' },
   { name: 'Scrum', icon: 'groups', color: 'text-green-300' },
 ];
 
