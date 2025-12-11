@@ -6,11 +6,8 @@ export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     
     // Configuração para GitHub Pages
-    // Se o repositório não estiver na raiz (ex: username.github.io/repo), 
-    // descomente a linha abaixo e ajuste o nome do repositório
-    // const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] || 'Portifolio';
-    // const base = `/${repoName}/`;
-    const base = '/'; // Para repositório na raiz (username.github.io)
+    // Ajuste o base path conforme o nome do seu repositório no GitHub Pages
+    const base = '/Portifolio/'; // Nome do repositório: Portifolio
     
     return {
       base,
