@@ -40,7 +40,7 @@ export const Skills: React.FC = () => {
             </h3>
             <div className="flex flex-wrap gap-2">
                 {['TSO', 'Roscoe', 'Control-M', 'Connect Direct', 'Mocha'].map(item => (
-                    <span key={item} className="text-xs bg-[#1e1e1e] px-2 py-1 rounded text-gray-400 border border-[#333]">{item}</span>
+                    <span key={item} className="text-xs bg-[#1e1e1e] px-2 py-1 rounded text-gray-400 border border-[#333] whitespace-nowrap">{item}</span>
                 ))}
             </div>
         </div>
@@ -50,7 +50,7 @@ export const Skills: React.FC = () => {
             </h3>
              <div className="flex flex-wrap gap-2">
                 {['TEF', 'POS', 'ATM', 'Adquirência', 'Emissão', 'Clearing'].map(item => (
-                    <span key={item} className="text-xs bg-[#1e1e1e] px-2 py-1 rounded text-gray-400 border border-[#333]">{item}</span>
+                    <span key={item} className="text-xs bg-[#1e1e1e] px-2 py-1 rounded text-gray-400 border border-[#333] whitespace-nowrap">{item}</span>
                 ))}
             </div>
         </div>

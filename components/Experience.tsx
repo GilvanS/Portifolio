@@ -54,7 +54,7 @@ export const Experience: React.FC = () => {
             
             <div className="flex flex-wrap gap-2">
               {exp.tags.map(tag => (
-                <span key={tag} className="text-xs font-mono text-keyword bg-[#2d2d2d] px-2 py-1 rounded border border-transparent hover:border-keyword transition-colors">
+                <span key={tag} className="text-xs font-mono text-keyword bg-[#2d2d2d] px-2 py-1 rounded border border-transparent hover:border-keyword transition-colors whitespace-nowrap">
                   {tag}
                 </span>
               ))}
