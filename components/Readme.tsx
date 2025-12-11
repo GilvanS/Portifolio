@@ -4,20 +4,33 @@ export const Readme: React.FC = () => {
     return (
         <div className="p-8 max-w-5xl animate-fade-in font-sans overflow-hidden w-full box-border">
             {/* Header */}
-            <div className="mb-8">
-                <h1 className="text-4xl font-bold text-white mb-4">
-                    Olá 👋 Eu sou <span className="text-keyword">Gilvan João Sousa</span>!
-                </h1>
-                <div className="mb-6">
-                    <a 
-                        href="https://www.linkedin.com/in/gilvan-joão-sousa-4a9755a9/?trk=opento_sprofile_details" 
-                        target="_blank" 
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-2 px-4 py-2 bg-[#0077b5] hover:bg-[#005885] text-white rounded transition-colors text-sm"
-                    >
-                        <span>🔗</span>
-                        <span>LinkedIn</span>
-                    </a>
+            <div className="mb-8 flex flex-col md:flex-row gap-6 items-start">
+                <div className="shrink-0">
+                    <img 
+                        src="/Portifolio/images/profile.jpg"
+                        alt="Gilvan João Sousa"
+                        className="rounded-full h-32 w-32 border-4 border-[#333] shadow-xl object-cover"
+                        onError={(e) => {
+                            const target = e.target as HTMLImageElement;
+                            target.style.display = 'none';
+                        }}
+                    />
+                </div>
+                <div className="flex-1">
+                    <h1 className="text-4xl font-bold text-white mb-4">
+                        Olá 👋 Eu sou <span className="text-keyword">Gilvan João Sousa</span>!
+                    </h1>
+                    <div className="mb-6">
+                        <a 
+                            href="https://www.linkedin.com/in/gilvan-joão-sousa-4a9755a9/?trk=opento_sprofile_details" 
+                            target="_blank" 
+                            rel="noreferrer"
+                            className="inline-flex items-center gap-2 px-4 py-2 bg-[#0077b5] hover:bg-[#005885] text-white rounded transition-colors text-sm"
+                        >
+                            <span>🔗</span>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
