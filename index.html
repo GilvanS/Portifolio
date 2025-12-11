@@ -77,6 +77,17 @@
           -webkit-font-smoothing: antialiased;
           font-feature-settings: 'liga';
           text-rendering: optimizeLegibility;
+          overflow: hidden;
+          text-indent: 100%;
+          width: 1em;
+          height: 1em;
+        }
+        .material-symbols-outlined::before {
+          content: attr(data-icon);
+          display: block;
+          text-indent: 0;
+          font-size: inherit;
+          line-height: 1;
         }
       }
     </style>
