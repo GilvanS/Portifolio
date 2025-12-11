@@ -47,7 +47,8 @@ export const TopBar: React.FC<TopBarProps> = ({ activeFile, openFiles, onTabClic
           <span className="mr-2 italic">{fileId}</span>
           <span 
             onClick={(e) => onTabClose(fileId, e)}
-            className={`material-symbols-outlined text-[12px] p-0.5 rounded-md hover:bg-gray-600 opacity-0 group-hover:opacity-100 ${activeFile === fileId ? 'opacity-100' : ''}`}
+            className={`material-symbols-outlined text-[14px] p-0.5 rounded hover:bg-gray-600/50 transition-all opacity-60 group-hover:opacity-100 ${activeFile === fileId ? 'opacity-80' : ''}`}
+            title="Fechar aba"
           >
             close
           </span>
