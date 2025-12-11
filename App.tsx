@@ -8,6 +8,7 @@ import { Experience } from './components/Experience';
 import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';
 import { Readme } from './components/Readme';
+import { Projects } from './components/Projects';
 
 // Generic placeholder for projects/theme
 const Placeholder = ({ title }: { title: string }) => (
@@ -49,7 +50,7 @@ function App() {
       case 'habilidades.tsx': return <Skills />;
       case 'contato.py': return <Contact />;
       case 'readme.md': return <Readme />;
-      case 'projetos.js': return <Placeholder title="Projetos" />;
+      case 'projetos.js': return <Projects />;
       case 'theme.css': return <Placeholder title="Theme Config" />;
       default: return <Welcome />;
     }
