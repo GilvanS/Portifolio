@@ -77,17 +77,25 @@
           -webkit-font-smoothing: antialiased;
           font-feature-settings: 'liga';
           text-rendering: optimizeLegibility;
-          overflow: hidden;
-          text-indent: 100%;
+        }
+        .material-symbols-outlined[data-icon] {
+          font-size: 0;
           width: 1em;
           height: 1em;
+          position: relative;
+          overflow: hidden;
         }
-        .material-symbols-outlined::before {
+        .material-symbols-outlined[data-icon]::before {
           content: attr(data-icon);
-          display: block;
-          text-indent: 0;
-          font-size: inherit;
+          font-family: 'Material Symbols Outlined';
+          font-size: 24px;
           line-height: 1;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
         }
       }
     </style>
