@@ -30,29 +30,29 @@ const experiences: ExperienceItem[] = [
 
 export const Experience: React.FC = () => {
   return (
-    <div className="p-8 max-w-4xl animate-fade-in">
+    <div className="p-8 max-w-4xl animate-fade-in w-full box-border">
       <h2 className="text-2xl font-bold text-white mb-2 flex items-center gap-3">
         <span className="text-keyword">const</span> <span className="text-function">careerPath</span> = <span className="text-white">[</span>
       </h2>
       <p className="text-gray-500 font-mono text-sm mb-8 ml-4">// 8 anos de experiência em QA</p>
       
-      <div className="relative border-l border-gray-700 ml-3 space-y-10">
+      <div className="relative border-l border-gray-700 ml-3 space-y-10 overflow-hidden">
         {experiences.map((exp, index) => (
-          <div key={index} className="relative pl-8 group">
+          <div key={index} className="relative pl-8 group overflow-hidden">
             <div className={`absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full ${exp.colorClass} shadow-glow`}></div>
             
-            <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
-               <span className="text-string font-mono text-sm min-w-[120px]">{exp.period}</span>
-               <h3 className="text-xl font-bold text-white">{exp.role}</h3>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2 overflow-hidden">
+               <span className="text-string font-mono text-sm min-w-[120px] whitespace-nowrap">{exp.period}</span>
+               <h3 className="text-xl font-bold text-white break-words">{exp.role}</h3>
             </div>
             
-            <div className="text-gray-400 font-mono text-sm mb-3">@ {exp.company}</div>
+            <div className="text-gray-400 font-mono text-sm mb-3 overflow-hidden">@ {exp.company}</div>
             
-            <p className="text-gray-500 leading-relaxed mb-4 max-w-2xl break-words overflow-wrap-anywhere">
+            <p className="text-gray-500 leading-relaxed mb-4 break-words overflow-wrap-anywhere word-break-break-word">
               {exp.description}
             </p>
             
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 overflow-hidden">
               {exp.tags.map(tag => (
                 <span key={tag} className="text-xs font-mono text-keyword bg-[#2d2d2d] px-2 py-1 rounded border border-transparent hover:border-keyword transition-colors whitespace-nowrap">
                   {tag}
