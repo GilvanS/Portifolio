@@ -11,8 +11,16 @@ export const Readme: React.FC = () => {
                         alt="Gilvan João Sousa"
                         className="rounded-full h-32 w-32 border-4 border-[#333] shadow-xl object-cover"
                         onError={(e) => {
+                            // Fallback para avatar gerado se a imagem não carregar
                             const target = e.target as HTMLImageElement;
                             target.style.display = 'none';
+                            const parent = target.parentElement;
+                            if (parent && !parent.querySelector('.avatar-fallback')) {
+                                const fallback = document.createElement('div');
+                                fallback.className = 'avatar-fallback bg-center bg-no-repeat bg-cover rounded-full h-32 w-32 border-4 border-[#333] shadow-xl';
+                                fallback.style.backgroundImage = 'url("https://ui-avatars.com/api/?name=Gilvan+João+Sousa&background=0D8ABC&color=fff&size=256")';
+                                parent.appendChild(fallback);
+                            }
                         }}
                     />
                 </div>
