@@ -60,29 +60,29 @@ function App() {
     <div className="flex h-screen w-full bg-editor-bg text-gray-300 overflow-hidden font-sans">
       {/* Activity Bar (Leftmost strip) */}
       <div className="w-12 bg-activity-bg flex flex-col items-center py-4 justify-between border-r border-[#1e1e1e] z-10 overflow-hidden">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 w-full">
             <div className="cursor-pointer border-l-2 border-white w-full flex justify-center py-1 overflow-hidden">
-                <span className="material-symbols-outlined text-white text-[24px] select-none">files</span>
-            </div>
-            <div className="cursor-pointer text-gray-500 hover:text-white transition-colors overflow-hidden">
-                <span className="material-symbols-outlined text-[24px] select-none">search</span>
+                <span className="material-symbols-outlined text-white text-[24px] select-none" data-icon="files">files</span>
             </div>
             <div className="cursor-pointer text-gray-500 hover:text-white transition-colors overflow-hidden w-full flex justify-center">
-                <span className="material-symbols-outlined text-[24px] select-none overflow-hidden" aria-hidden="true">source_control</span>
+                <span className="material-symbols-outlined text-[24px] select-none" data-icon="search">search</span>
             </div>
-            <div className="cursor-pointer text-gray-500 hover:text-white transition-colors overflow-hidden">
-                <span className="material-symbols-outlined text-[24px] select-none">bug_report</span>
+            <div className="cursor-pointer text-gray-500 hover:text-white transition-colors overflow-hidden w-full flex justify-center">
+                <span className="material-symbols-outlined text-[24px] select-none" data-icon="source_control" aria-hidden="true">source_control</span>
             </div>
-            <div className="cursor-pointer text-gray-500 hover:text-white transition-colors overflow-hidden">
-                <span className="material-symbols-outlined text-[24px] select-none">extension</span>
+            <div className="cursor-pointer text-gray-500 hover:text-white transition-colors overflow-hidden w-full flex justify-center">
+                <span className="material-symbols-outlined text-[24px] select-none" data-icon="bug_report">bug_report</span>
+            </div>
+            <div className="cursor-pointer text-gray-500 hover:text-white transition-colors overflow-hidden w-full flex justify-center">
+                <span className="material-symbols-outlined text-[24px] select-none" data-icon="extension">extension</span>
             </div>
         </div>
-        <div className="flex flex-col gap-6 mb-2">
-            <div className="cursor-pointer text-gray-500 hover:text-white transition-colors overflow-hidden">
-                <span className="material-symbols-outlined text-[24px] select-none">account_circle</span>
+        <div className="flex flex-col gap-6 mb-2 w-full">
+            <div className="cursor-pointer text-gray-500 hover:text-white transition-colors overflow-hidden w-full flex justify-center">
+                <span className="material-symbols-outlined text-[24px] select-none" data-icon="account_circle">account_circle</span>
             </div>
-            <div className="cursor-pointer text-gray-500 hover:text-white transition-colors overflow-hidden">
-                <span className="material-symbols-outlined text-[24px] select-none">settings</span>
+            <div className="cursor-pointer text-gray-500 hover:text-white transition-colors overflow-hidden w-full flex justify-center">
+                <span className="material-symbols-outlined text-[24px] select-none" data-icon="settings">settings</span>
             </div>
         </div>
       </div>
